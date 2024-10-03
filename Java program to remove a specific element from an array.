@@ -1,0 +1,23 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+       List<Integer> arr=new ArrayList<>();
+       arr.add(7);
+       arr.add(4);
+       arr.add(6);
+       arr.add(90);
+       arr.add(44);
+       Scanner sc=new Scanner(System.in);
+       System.out.println("enter any element to remove");
+       int r=sc.nextInt();
+       if(arr.remove(Integer.valueOf(r))){
+           System.out.println(r + " was removed from the list");
+       }
+       else{
+           System.out.println(r+ "was not found in a list");
+       }
+       System.out.println("Updated ArrayList is:"+ arr);
+       
+
+    }
+}
